@@ -1,0 +1,123 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+ul {
+	list-style: none;
+	font-size: 1.5em;
+}
+
+.flex {
+	display: flex;
+}
+
+.h-full {
+	min-height: 100vh;
+}
+
+nav {
+	width: 30%;
+	padding: .50em;
+	background: url(../img/leaves.jpg);
+}
+
+ul > li > a {
+	text-decoration: none;
+}
+
+ul.main-menu > li > a {
+	padding: .25em .5em;
+	display: block;
+	margin-bottom: .25em;
+	color: #fff;
+	background-color: #ccc;
+	border-radius: .25em;
+	transition: background-color 200ms ease;
+}
+
+ul.main-menu > li:hover > a {
+	background-color: #000;
+	color: #6fe467;
+}
+
+ul.main-menu > li:hover > .absolute {
+	display: block;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100%;
+	font-size: .8em;
+}
+
+.absolute li > a {
+	padding: .25em .5em;
+	margin-left: 15px;
+	background-color: #ccc;
+	color: #fff;
+	border-radius: .25em;
+}
+
+.absolute li:hover > a {
+	background-color: #6fe467;
+}
+
+header, main, footer {
+	padding: .5em;
+}
+
+header {
+	background-color: crimson;
+	margin-bottom: .75em;
+}
+
+main {
+	font-size: 1.2em;
+	min-height: calc(100vh - 108px);
+}
+
+section {
+	margin-bottom: 1em;
+}
+
+footer {
+	text-align: center;
+	background-color: crimson;
+}
+
+.expand > ul {
+	/*height: 0px;*/
+	display: none;
+	transition: all .5s ease;
+}
+
+.expand:hover > ul {
+	/*height: fit-content;*/
+	display: block;
+}
+
+.expand > ul li > a {
+	display: block;
+	font-size: .5em;
+	color: #fff;
+	padding: .25em .5em;
+	background-color: #ccc;
+	margin-bottom: .25em;
+	border-radius: .25em;
+}
+
+.expand > ul li:hover > a {
+	background-color: #000;
+	color: #6fe467;
+}

@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.bg{
+		background: url(../img/bg.png);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+}
+.navbar{
+	height: 80px;
+	width: 100%;
+	background: rgb(0,0,0,0.4);
+}
+.logo{
+	height: 80px;
+	margin-left: 60px;
+}
+.menu{
+	float: right;
+	display: flex;
+	height: 80px;
+	align-items: center;
+	margin-right: 60px;
+}
+.menu-item{
+	margin: 10px;
+	text-decoration: none;
+	font-family: helvetica;
+	color: white;
+	font-weight: bold;
+}
+.header{
+	font-size: 5em;
+	font-family: sans-serif;
+	color: grey;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.button{
+font-size: 30px;
+background-color: #ad7b20;
+text-decoration: none;
+padding: 5px 10px;
+font-family: sans-serif;
+}
